@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Reporter</title>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+    <div>
+        <nav class="navbar navbar-light bg-light">
+            <span class="navbar-brand mb-0 h1">Team Reporter</span>
+            <button onclick="logout()" class="button"><span>Logout </span></button>
+          </nav>
+
+    </div>
+
+    
+ </div>
+ <!-- Trigger/Open The Modal -->
+<button id="myBtn" class="addbutton">+</button>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">x</span>
+    <input type="text" id="gettext">
+    <p><button  onclick="post()">Post</button>
+
+        
+  </div>
+
+</div>
+<p id="demo"></p></p>
+
+    <script type="module">
+
+        const firebaseConfig = {
+            apiKey: "AIzaSyBWZ3Gzj9Jf4Rh7v5JAmW40Q0nBzBldlBI",
+            authDomain: "demopractice-ba746.firebaseapp.com",
+            projectId: "demopractice-ba746",
+            storageBucket: "demopractice-ba746.appspot.com",
+            messagingSenderId: "337100620489",
+            appId: "1:337100620489:web:4a4ac6e4dd8fdf24888318",
+            measurementId: "G-QNFL2YLK2K"
+        };
+
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+
+    </script>
+    <script src="./script.js"></script>
+</body>
+</html>
